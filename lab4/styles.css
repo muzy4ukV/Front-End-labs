@@ -1,0 +1,5 @@
+#photos > img {
+    display: flex;
+    flex-direction: column;
+    object-fit: "cover";
+}
