@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="uk">
+    <head>
+        <title>Музичук В.А. ІП-13</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="forminfo">
+            <form action="index.php" method="post">
+                <h2>Форма для заповнення</h2>
+                <ul>
+                    <li>
+                        <label for="fullName">ПІБ: <span class="star">*</span></label>
+                        <input type="text" id="fullName" name="user_name" required/>
+                    </li>
+                    <li>
+                        <label for="number">Номер телефону: <span class="star">*</span></label>
+                        <input type="text" id="number" name="phone_number" required maxlength="15"/>                    
+                    </li>
+                    <li>
+                        <label for="id-card">ID-card: <span class="star">*</span></label>
+                        <input type="text" id="id-card" name="card_number" required minlength="10" maxlength="10"/>
+                    </li>
+                    <li>
+                        <label for="faculty">Факультет:</label>
+                        <input type="text" id="faculty" name="user_faculty" maxlength="4"/>
+                    </li>
+                    <li>
+                        <label for="birthday">Дата народження:</label>
+                        <input type="date" id="birthday" name="user_birthday" />
+                    </li>
+                    <li class="button">
+                        <button type="submit">Надіслати</button>
+                    </li>                                
+                </ul>
+            </form>
+            <div id="info">
+                <h2>Введені дані</h2>
+                <p>
+                    <strong>ПІБ:</strong>
+                    <span id="name"></span>
+                </p>
+                <p>
+                    <strong>Номер телефону:</strong>
+                    <span id="phone"></span>
+                </p>
+                <p>
+                    <strong>ID-card:</strong>
+                    <span id="card"></span>
+                </p>
+                <p>
+                    <strong>Факультет:</strong>
+                    <span id="fact"></span>
+                </p>
+                <p>
+                    <strong>Дата народження:</strong>
+                    <span id="date"></span>
+                </p>
+            </div>
+        </div>
+        
+
+        <div id="table">
+            <div>
+                <label for="colorPicker">Оберіть колір тут</label>
+                <input id="colorPicker" type="color">
+            </div>
+            <br>
+            <table>
+                
+            </table>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
